@@ -28,7 +28,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1321610691575588
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114675143423895712}
   - component: {fileID: 114232709729959766}
   m_Layer: 5
-  m_Name: Character02A
+  m_Name: Character02AButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 114525945072931768}
   - component: {fileID: 114893499781891376}
   m_Layer: 5
-  m_Name: Character01A
+  m_Name: Character01AButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 114392189408926786}
   - component: {fileID: 114915065776552770}
   m_Layer: 5
-  m_Name: Character03B
+  m_Name: Character03BButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 114082418765035744}
   - component: {fileID: 114461066664746948}
   m_Layer: 5
-  m_Name: Character02B
+  m_Name: Character02BButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 114543326639380656}
   - component: {fileID: 114413197066674202}
   m_Layer: 5
-  m_Name: Character03A
+  m_Name: Character03AButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 114718042947443416}
   - component: {fileID: 114217953543822782}
   m_Layer: 5
-  m_Name: Character01B
+  m_Name: Character01BButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
