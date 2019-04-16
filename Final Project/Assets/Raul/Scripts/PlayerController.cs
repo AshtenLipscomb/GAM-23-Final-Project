@@ -15,21 +15,21 @@ public class PlayerController : MonoBehaviour {
 
 	private float verticalVelocity = 0;
 
-	public Rigidbody rocket;
+	//public Rigidbody punch;
 
 	void Start ()
 	{
 		controller = GetComponent<CharacterController>();	
 	}
 
-	void FireRocket()
+	/*void FireRocket()
 	{
-		Rigidbody rocketClone = (Rigidbody)Instantiate(rocket, transform.position, transform.rotation);
+		Rigidbody rocketClone = (Rigidbody)Instantiate(punch, transform.position, transform.rotation);
 		rocketClone.velocity = transform.forward * speed;
 
 		// You can also access other components / scripts of the clone
 		//rocketClone.GetComponent<MyRocketScript>().DoSomething();
-	}
+	}*/
 
 	// Update is called once per frame
 	void Update ()
@@ -53,11 +53,11 @@ public class PlayerController : MonoBehaviour {
 		moveDirection = transform.TransformDirection(moveDirection);
 		controller.Move(moveDirection * Time.deltaTime);
 
-		if (Input.GetButton("Fire1"))
+		/*if (Input.GetButton("Fire1"))
 		{
 			FireRocket();
 			Debug.Log("Attacking");
-		}
+		}*/
 
 	}
 
