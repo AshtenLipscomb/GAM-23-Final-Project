@@ -642,6 +642,14 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4404403115121076, guid: ee72282a2906a3a4297a218261e0b215, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449185004642122, guid: ee72282a2906a3a4297a218261e0b215, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 135
+      objectReference: {fileID: 0}
     - target: {fileID: 1235348284884140, guid: ee72282a2906a3a4297a218261e0b215, type: 2}
       propertyPath: m_IsActive
       value: 0
