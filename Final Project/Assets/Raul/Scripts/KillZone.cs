@@ -17,7 +17,18 @@ public class KillZone : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		Debug.Log("Object has fallen off the stage");
-		other.transform.position = new Vector3(0, 5, 0); 
+		if(other.GetComponent<Rigidbody>() != null)
+		{
+			Debug.Log("This is sandbag"); 
+			other.GetComponent<Rigidbody>().velocity = Vector3.zero;
+			other.transform.position = new Vector3(0, 5, 0);
+		}
+		else
+		{
+			//other.GetComponent<CharacterController>().velocity = Vector3.zero;
+			other.transform.position = new Vector3(0, 5, 0);
+		}
+		
 
 	}
 }

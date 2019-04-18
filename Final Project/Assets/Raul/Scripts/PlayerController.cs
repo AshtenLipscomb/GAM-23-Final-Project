@@ -10,30 +10,39 @@ public class PlayerController : MonoBehaviour {
 	public float speed = 6.0f;
 	public float jumpSpeed = 15.0f;
 	public float gravity = 20.0f;
+	public SpriteRenderer sprite;
+
+	public GameObject rightHit;
+	public GameObject leftHit;
 
 	private CharacterController controller;
 
 	private float verticalVelocity = 0;
 
-	//public Rigidbody punch;
+	
 
 	void Start ()
 	{
 		controller = GetComponent<CharacterController>();	
 	}
 
-	/*void FireRocket()
+	void punchLeft()
 	{
-		Rigidbody rocketClone = (Rigidbody)Instantiate(punch, transform.position, transform.rotation);
-		rocketClone.velocity = transform.forward * speed;
+		leftHit.SetActive(true);
+		rightHit.SetActive(false); 
+	}
 
-		// You can also access other components / scripts of the clone
-		//rocketClone.GetComponent<MyRocketScript>().DoSomething();
-	}*/
+	void punchRight()
+	{
+		leftHit.SetActive(false);
+		rightHit.SetActive(true);
+	}
 
 	// Update is called once per frame
 	void Update ()
 	{
+		leftHit.SetActive(false);
+		rightHit.SetActive(false);
 		if (controller.isGrounded)
 		{
 			if (Input.GetButton("Jump"))
@@ -53,11 +62,30 @@ public class PlayerController : MonoBehaviour {
 		moveDirection = transform.TransformDirection(moveDirection);
 		controller.Move(moveDirection * Time.deltaTime);
 
-		/*if (Input.GetButton("Fire1"))
+		if (Input.GetAxis("Horizontal") > 0)
 		{
-			FireRocket();
-			Debug.Log("Attacking");
-		}*/
+			sprite.flipX = false; 
+		}
+		else if(Input.GetAxis("Horizontal") < 0)
+		{
+			sprite.flipX = true;
+		}
+
+		if (Input.GetButton("Fire1"))
+		{
+			if (sprite.flipX)
+			{
+				punchLeft(); 
+			}
+			else
+			{
+				punchRight(); 
+			}
+
+			//other.GetComponent<Rigidbody>().AddForce(new Vector3(5, 5, 0) * pushBack, ForceMode.Acceleration);
+		}
+
+
 
 	}
 

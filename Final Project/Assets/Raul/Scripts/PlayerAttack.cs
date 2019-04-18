@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour {
 
-
+	
 	public float pushBack = 20; 
 
 	// Use this for initialization
@@ -17,20 +17,10 @@ public class PlayerAttack : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(Collider other)
+	void OnCollisionEnter(Collision collision)
 	{
-		Debug.Log("Object entered trigger");
-	}
-
-	void OnTriggerStay(Collider other)
-	{
-		Debug.Log("Object is within the trigger");
-		other.GetComponent<Rigidbody>().AddForce(new Vector3(5, 5, 0) * pushBack, ForceMode.Acceleration); 
-
-	}
-
-	void OnTriggerExit(Collider other)
-	{
-		Debug.Log("Object has exited trigger");
+		Debug.Log("Test"); 
+		collision.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(5, 5, 0) * pushBack, ForceMode.Acceleration);
+		
 	}
 }
