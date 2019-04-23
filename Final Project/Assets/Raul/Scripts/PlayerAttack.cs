@@ -17,7 +17,7 @@ public class PlayerAttack : MonoBehaviour {
 		
 	}
 
-	void OnCollisionEnter(Collision collision)
+	void OnTriggerEnter(Collider collision)
 	{
 		Debug.Log("Test"); 
 		collision.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(5, 5, 0) * pushBack, ForceMode.Acceleration);
