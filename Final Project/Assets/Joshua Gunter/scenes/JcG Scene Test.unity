@@ -279,10 +279,6 @@ Prefab:
       propertyPath: m_Name
       value: ChUiBd
       objectReference: {fileID: 0}
-    - target: {fileID: 1438390181466504, guid: d8a26c1e0bae40a4ba98d7ca3e06618b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8a26c1e0bae40a4ba98d7ca3e06618b, type: 2}
   m_IsPrefabParent: 0
@@ -485,10 +481,6 @@ Prefab:
     - target: {fileID: 224048288645576696, guid: dc203eda92e5e6c4da252303e1970d43,
         type: 2}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1964659270965478, guid: dc203eda92e5e6c4da252303e1970d43, type: 2}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
