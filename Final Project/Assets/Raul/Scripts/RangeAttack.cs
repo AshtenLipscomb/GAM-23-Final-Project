@@ -7,7 +7,9 @@ public class RangeAttack : MonoBehaviour {
 	//public GameObject rightSpawn;
 	//public GameObject leftSpawn; 
 
-	public GameObject arrow; 
+	public Rigidbody arrow;
+	public float speed = 4;
+	public bool fireArrow = true; 
 
 	// Use this for initialization
 	void Start () {
@@ -17,14 +19,19 @@ public class RangeAttack : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+			//if (Input.GetKeyUp("Fire1"))
+		//{
+			Debug.Log("Arrow");
+			Rigidbody a = Instantiate(arrow, transform.position, transform.rotation);
+			a.velocity = transform.right * speed;
+		//}
+			 
+		
 	}
 
-	/*void OnTriggerEnter(Collider collision)
-	{
-		//Debug.Log("Arrow hit");
-		//collision.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(5, 5, 0) , ForceMode.Acceleration);
+	
 
-	}*/
+	
 
 
 }

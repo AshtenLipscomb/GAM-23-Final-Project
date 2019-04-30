@@ -630,6 +630,48 @@ Transform:
   m_Father: {fileID: 476628321}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &472306197
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4889728551809522, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889728551809522, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.8167615
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889728551809522, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.312
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889728551809522, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889728551809522, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889728551809522, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889728551809522, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889728551809522, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &476628320
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!143 &516923361
 CharacterController:
   m_ObjectHideFlags: 0
@@ -824,6 +866,7 @@ GameObject:
   - component: {fileID: 652522436}
   - component: {fileID: 652522435}
   - component: {fileID: 652522434}
+  - component: {fileID: 652522438}
   m_Layer: 0
   m_Name: RightHitbox
   m_TagString: Untagged
@@ -913,6 +956,20 @@ Transform:
   m_Father: {fileID: 578258925}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &652522438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652522433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccec4211c0c574b45b261f6464c6d568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 54370770638090162, guid: f35b75863dac8d943909fbaddea473be, type: 2}
+  speed: 4
+  fireArrow: 1
 --- !u!1 &834243224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,7 +1373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!143 &1197722028
 CharacterController:
   m_ObjectHideFlags: 0
