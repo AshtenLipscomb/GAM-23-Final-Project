@@ -19,7 +19,9 @@ public class PlayerController : MonoBehaviour {
 
 	private float verticalVelocity = 0;
 
-	
+	public string jumpButton = "Jump_P1";
+	public string horizontalCtrl = "Horizontal_P1";
+	public string attackButton = "Fire1_P1"; 
 
 	void Start ()
 	{
@@ -45,7 +47,7 @@ public class PlayerController : MonoBehaviour {
 		rightHit.SetActive(false);
 		if (controller.isGrounded)
 		{
-			if (Input.GetButton("Jump"))
+			if (Input.GetButton(jumpButton))
 			{
 				verticalVelocity = jumpSpeed;
 			}
@@ -58,20 +60,20 @@ public class PlayerController : MonoBehaviour {
 		{
 			verticalVelocity -= gravity * Time.deltaTime;
 		}
-		Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal") * speed, verticalVelocity, 0.0f);
+		Vector3 moveDirection = new Vector3(Input.GetAxis(horizontalCtrl) * speed, verticalVelocity, 0.0f);
 		moveDirection = transform.TransformDirection(moveDirection);
 		controller.Move(moveDirection * Time.deltaTime);
 
-		if (Input.GetAxis("Horizontal") > 0)
+		if (Input.GetAxis(horizontalCtrl) > 0)
 		{
 			sprite.flipX = false; 
 		}
-		else if(Input.GetAxis("Horizontal") < 0)
+		else if(Input.GetAxis(horizontalCtrl) < 0)
 		{
 			sprite.flipX = true;
 		}
 
-		if (Input.GetButton("Fire1"))
+		if (Input.GetButton(attackButton))
 		{
 			if (sprite.flipX)
 			{

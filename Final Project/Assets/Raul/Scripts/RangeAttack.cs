@@ -9,7 +9,7 @@ public class RangeAttack : MonoBehaviour {
 
 	public Rigidbody arrow;
 	public float speed = 4;
-	public bool fireArrow = true; 
+	//public bool fireArrow = true; 
 
 	// Use this for initialization
 	void Start () {
@@ -19,12 +19,12 @@ public class RangeAttack : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-			//if (Input.GetKeyUp("Fire1"))
-		//{
+			if (Input.GetKeyUp("Fire1"))
+		{
 			Debug.Log("Arrow");
 			Rigidbody a = Instantiate(arrow, transform.position, transform.rotation);
 			a.velocity = transform.right * speed;
-		//}
+		}
 			 
 		
 	}
