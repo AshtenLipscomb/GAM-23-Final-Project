@@ -13,17 +13,18 @@ public class RangeAttack : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		Instantiate(arrow, new Vector3(0, 0, 0), Quaternion.identity); 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-			if (Input.GetKeyUp("Fire1"))
+			if (Input.GetKeyDown("Fire1"))
 		{
 			Debug.Log("Arrow");
 			Rigidbody a = Instantiate(arrow, transform.position, transform.rotation);
-			a.velocity = transform.right * speed;
+			a.velocity = transform.forward * speed; 
+			
 		}
 			 
 		
