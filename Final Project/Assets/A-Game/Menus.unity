@@ -2428,6 +2428,21 @@ Prefab:
       propertyPath: m_Text
       value: Player 1 Select
       objectReference: {fileID: 0}
+    - target: {fileID: 114893499781891376, guid: ee72282a2906a3a4297a218261e0b215,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1695630557}
+    - target: {fileID: 114893499781891376, guid: ee72282a2906a3a4297a218261e0b215,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893499781891376, guid: ee72282a2906a3a4297a218261e0b215,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee72282a2906a3a4297a218261e0b215, type: 2}
   m_IsPrefabParent: 0
