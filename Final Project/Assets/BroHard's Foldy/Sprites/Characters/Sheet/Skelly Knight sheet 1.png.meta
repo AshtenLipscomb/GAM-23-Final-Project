@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 9e904ae0a0265d3458f9fa9b13a49b16
+guid: 568c6f6d3e1aa7e4a8a6662f1beae0b7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Skelly Knight sheet_0
-    21300002: Skelly Knight sheet_1
+    21300000: Skelly Knight sheet 1_0
+    21300002: Skelly Knight sheet 1_1
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -31,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -84,41 +84,41 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skelly Knight sheet_0
+      name: Skelly Knight sheet 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 32
         width: 27
         height: 26
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61ce98dc66d25ab47891577893a569c8
+      spriteID: 185a22fc573b09e4ba1f7b90b184b687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skelly Knight sheet_1
+      name: Skelly Knight sheet 1_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 25
         height: 21
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e92caf879e20d8f4aa3605dbfe37c067
+      spriteID: 4903e4bff9a42ce4db99d1905796c47a
       vertices: []
       indices: 
       edges: []
@@ -126,7 +126,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 708b2db09a05f7347bfef99120f41c4b
+    spriteID: 306d33beb40cdc14a9aa1f262f212cad
     vertices: []
     indices: 
     edges: []
