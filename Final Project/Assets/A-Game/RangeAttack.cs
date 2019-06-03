@@ -12,9 +12,7 @@ public class RangeAttack : MonoBehaviour {
 	//public bool fireArrow = true; 
 
 	// Use this for initialization
-	void Start () {
-		Instantiate(arrow, new Vector3(0, 0, 0), Quaternion.identity); 
-	}
+	void Start () {	}
 	
 	// Update is called once per frame
 	void Update () {
