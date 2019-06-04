@@ -15,7 +15,8 @@ public class Character2Spawner : MonoBehaviour
     {
         int selectedCharacterIndex = PlayerPrefs.GetInt("player2.character", 0);
 
-        Instantiate(characterPrefabs[selectedCharacterIndex], transform.position, Quaternion.identity);
+        GameObject go = Instantiate(characterPrefabs[selectedCharacterIndex], transform.position, transform.rotation);
+        go.GetComponent<PlayerController>().characterNum = 2;
     }
 
     // Update is called once per frame

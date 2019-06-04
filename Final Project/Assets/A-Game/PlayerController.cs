@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	// Use this for initialization
-
-
 	public float speed = 6.0f;
 	public float jumpSpeed = 15.0f;
 	public float gravity = 20.0f;
@@ -19,9 +16,11 @@ public class PlayerController : MonoBehaviour {
 
 	private float verticalVelocity = 0;
 
-	public string jumpButton = "Jump_P1";
-	public string horizontalCtrl = "Horizontal_P1";
-	public string attackButton = "Fire1_P1"; 
+    public int characterNum = 0;
+
+    public string jumpButton1 = "Jump_P1", jumpButton2 = "Jump_P2";
+    public string horizontalCtrl1 = "Horizontal_P1", horizontalCtrl2 = "Horizontal_P2";
+    public string attackButton1 = "Fire1_P1", attackButton2 = "Fire2_P2";
 
 	void Start ()
 	{
@@ -45,51 +44,92 @@ public class PlayerController : MonoBehaviour {
 	{
 		leftHit.SetActive(false);
 		rightHit.SetActive(false);
-		if (controller.isGrounded)
-		{
-			if (Input.GetButton(jumpButton))
-			{
-				verticalVelocity = jumpSpeed;
-			}
-			else
-			{
-				verticalVelocity = 0;
-			}
-		}
-		else
-		{
-			verticalVelocity -= gravity * Time.deltaTime;
-		}
-		Vector3 moveDirection = new Vector3(Input.GetAxis(horizontalCtrl) * speed, verticalVelocity, 0.0f);
-		moveDirection = transform.TransformDirection(moveDirection);
-		controller.Move(moveDirection * Time.deltaTime);
 
-		if (Input.GetAxis(horizontalCtrl) > 0)
-		{
-			sprite.flipX = false; 
-		}
-		else if(Input.GetAxis(horizontalCtrl) < 0)
-		{
-			sprite.flipX = true;
-		}
+        if(characterNum == 1)
+        {
+            if (controller.isGrounded)
+            {
+                if (Input.GetButton(jumpButton1))
+                {
+                    verticalVelocity = jumpSpeed;
+                }
+                else
+                {
+                    verticalVelocity = 0;
+                }
+            }
+            else
+            {
+                verticalVelocity -= gravity * Time.deltaTime;
+            }
+            Vector3 moveDirection = new Vector3(Input.GetAxis(horizontalCtrl1) * speed, verticalVelocity, 0.0f);
+            moveDirection = transform.TransformDirection(moveDirection);
+            controller.Move(moveDirection * Time.deltaTime);
 
-		if (Input.GetButton(attackButton))
-		{
-			if (sprite.flipX)
-			{
-				punchLeft(); 
-			}
-			else
-			{
-				punchRight(); 
-			}
+            if (Input.GetAxis(horizontalCtrl1) > 0)
+            {
+                sprite.flipX = false;
+            }
+            else if (Input.GetAxis(horizontalCtrl1) < 0)
+            {
+                sprite.flipX = true;
+            }
 
-			//other.GetComponent<Rigidbody>().AddForce(new Vector3(5, 5, 0) * pushBack, ForceMode.Acceleration);
-		}
+            if (Input.GetButton(attackButton1))
+            {
+                if (sprite.flipX)
+                {
+                    punchLeft();
+                }
+                else
+                {
+                    punchRight();
+                }
+            }
+        }
+        else if(characterNum == 2)
+        {
+            if (controller.isGrounded)
+            {
+                if (Input.GetButton(jumpButton2))
+                {
+                    verticalVelocity = jumpSpeed;
+                }
+                else
+                {
+                    verticalVelocity = 0;
+                }
+            }
+            else
+            {
+                verticalVelocity -= gravity * Time.deltaTime;
+            }
+            Vector3 moveDirection = new Vector3(Input.GetAxis(horizontalCtrl1) * speed, verticalVelocity, 0.0f);
+            moveDirection = transform.TransformDirection(moveDirection);
+            controller.Move(moveDirection * Time.deltaTime);
 
+            if (Input.GetAxis(horizontalCtrl2) > 0)
+            {
+                sprite.flipX = false;
+            }
+            else if (Input.GetAxis(horizontalCtrl2) < 0)
+            {
+                sprite.flipX = true;
+            }
 
-
+            if (Input.GetButton(attackButton2))
+            {
+                if (sprite.flipX)
+                {
+                    punchLeft();
+                }
+                else
+                {
+                    punchRight();
+                }
+            }
+        }
 	}
-
-	
 }
+
+//other.GetComponent<Rigidbody>().AddForce(new Vector3(5, 5, 0) * pushBack, ForceMode.Acceleration);

@@ -230,9 +230,13 @@ MonoBehaviour:
   sprite: {fileID: 429508155}
   rightHit: {fileID: 1274628129052758, guid: f35b75863dac8d943909fbaddea473be, type: 3}
   leftHit: {fileID: 1274628129052758, guid: f35b75863dac8d943909fbaddea473be, type: 3}
-  jumpButton: Jump_P1
-  horizontalCtrl: Horizontal_P1
-  attackButton: Fire1_P1
+  characterNum: 1
+  jumpButton1: Jump_P1
+  jumpButton2: Jump_P2
+  horizontalCtrl1: Horizontal_P1
+  horizontalCtrl2: Horizontal_P2
+  attackButton1: Fire1_P1
+  attackButton2: Fire2_P2
 --- !u!95 &1996050728
 Animator:
   serializedVersion: 3
