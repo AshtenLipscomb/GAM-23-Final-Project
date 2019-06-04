@@ -5595,7 +5595,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463289625}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.2842102, y: -3.83, z: 9}
+  m_LocalPosition: {x: -1, y: -3.5, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5614,12 +5614,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
+  - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
+  - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
 --- !u!1 &1474804911
 GameObject:
   m_ObjectHideFlags: 0
@@ -5736,7 +5736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484054553}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.2842102, y: -3.83, z: -9}
+  m_LocalPosition: {x: -1, y: -3.5, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5755,12 +5755,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
+  - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
+  - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
 --- !u!1 &1513950557
 GameObject:
   m_ObjectHideFlags: 0

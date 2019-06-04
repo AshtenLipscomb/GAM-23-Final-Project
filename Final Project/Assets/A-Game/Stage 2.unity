@@ -406,12 +406,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
+  - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
+  - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
 --- !u!1 &1501254960
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,12 +525,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
+  - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
+  - {fileID: 1996050726, guid: 38bff656ce7d32a4288b890f51de621d, type: 3}
+  - {fileID: 859917444548589364, guid: d2957adf7a7c27b47a51cc6f66585909, type: 3}
 --- !u!1 &1891851416
 GameObject:
   m_ObjectHideFlags: 0
