@@ -628,6 +628,7 @@ GameObject:
   - component: {fileID: 1021203987}
   - component: {fileID: 1021203986}
   - component: {fileID: 1021203988}
+  - component: {fileID: 1021203989}
   m_Layer: 0
   m_Name: Death barrier right
   m_TagString: Death
@@ -678,6 +679,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1021203989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021203985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f174827d1edd3b746848a80f2fc5da9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1165563699
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +793,7 @@ GameObject:
   - component: {fileID: 1280870086}
   - component: {fileID: 1280870085}
   - component: {fileID: 1280870087}
+  - component: {fileID: 1280870088}
   m_Layer: 0
   m_Name: Death barrier left
   m_TagString: Death
@@ -830,6 +844,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1280870088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280870084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f174827d1edd3b746848a80f2fc5da9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1324080274
 GameObject:
   m_ObjectHideFlags: 0
