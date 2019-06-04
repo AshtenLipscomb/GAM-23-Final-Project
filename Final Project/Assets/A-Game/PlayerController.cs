@@ -87,7 +87,8 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
-        else if(characterNum == 2)
+
+        if (characterNum == 2)
         {
             if (controller.isGrounded)
             {
@@ -104,7 +105,7 @@ public class PlayerController : MonoBehaviour {
             {
                 verticalVelocity -= gravity * Time.deltaTime;
             }
-            Vector3 moveDirection = new Vector3(Input.GetAxis(horizontalCtrl1) * speed, verticalVelocity, 0.0f);
+            Vector3 moveDirection = new Vector3(Input.GetAxis(horizontalCtrl2) * speed, verticalVelocity, 0.0f);
             moveDirection = transform.TransformDirection(moveDirection);
             controller.Move(moveDirection * Time.deltaTime);
 
@@ -130,6 +131,22 @@ public class PlayerController : MonoBehaviour {
             }
         }
 	}
+
+
+     void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "Death")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
+
+
+
+
+
 }
 
 //other.GetComponent<Rigidbody>().AddForce(new Vector3(5, 5, 0) * pushBack, ForceMode.Acceleration);
